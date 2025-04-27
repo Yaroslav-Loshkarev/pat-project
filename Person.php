@@ -3,6 +3,9 @@ class Person{
 	protected string $name;
 	protected int $age;
 
+	final public function showClassName(){
+		return "<b>".strtoupper(get_class($this))."</b>"."<br>";
+	}
 	public function __construct(string $name, int $age){
 		$this->name = $name;
 		$this->age = $this->setAge($age);

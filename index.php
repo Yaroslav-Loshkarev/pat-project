@@ -10,19 +10,19 @@
 		$client = new Client("Yaroslav", "n128a7@mail.ru");	
 
 		$person = new Person("Oleg", 32);
-		echo "<b>".strtoupper(get_class($person))."</b>"."<br>";
+		echo $person->showClassName($person);
 		echo $person->showInfo()."<br>";
 
 		echo "<br>";
 
 		$student = new Student("Anton", 18, 1, "MSU");
-		echo "<b>".strtoupper(get_class($student))."</b>"."<br>";
+		echo $student->showClassName($student);
 		echo $student->showInfo()."<br>";
 
 		echo "<br>";
 
 		$worker = new Worker("Nastya", 27, "Tester", "Testing");
-		echo "<b>".strtoupper(get_class($worker))."</b>"."<br>";
+		echo $worker->showClassName($worker);
 		echo $worker->showInfo();
 
 		?>		
